@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F70; 
+}
+    .right-image{
+position:fixed;
+right:0;
+top:0;
+height:100vh;
+z-index:-1;
+}
+
+.right-image img{
+height:100%;
+width:auto;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #F70); /* naranja en vez de blanco */
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    display: flex;
+    gap: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 300;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.center {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* REEL */
+.photo-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.photo-box {
+    position: relative;
+    border: 12px solid red;
+    max-width: 600px;
+}
+
+.photo-box img {
+    width: 100%;
+    display: auto;
+}
+
+.outer-box {
+    padding: 10px;
+    background-color: #F70;
+
+}
+/* FRASES */
+.hero {
+    display: flex;        
+    flex-direction: row;  
+    align-items: center;   /* los alinea verticalmente */
+    gap: 40px;
+}
+.text-box {
+    margin-right: 10;
+    width: 200px;
+}
+.side-text {
+    width: 200px;
+    text-align: right;  /* opcional, para que mire hacia la imagen */
+}
+.side-text div {
+    width: 200px;
+    text-align: center;
+}
+
+.reel-box {
+    border: 12px solid red;
+}
+
+.reel-box img {
+    width: 600px;
+    display: block;
+}
+
+.highlight {
+    background-color: rgb(255, 255, 255);
+    padding: 4px 8px;
+    font-weight: bold;
+}
+.about-section {  /*desde aquí va todo lo de Liz Zhunaula */
+    max-width: 1100;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;   /* centra todo el bloque */
+    align-items: center;       /* alinea verticalmente */
+    gap: 60px;                 /* espacio entre texto e imagen */
+    padding: 100px;
+}
+.about-text {
+    width: 800px;
+    text-align: right;
+}
+
+.about-image img {
+    width: 400px;
+    height: auto;
+}
+.contact-section{ /*desde aqui va todo lo de contact me */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 120px;
+    padding: 120px 80px;
+}
+
+.contact-text{
+    max-width: 520px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.contact-text p{
+    margin-bottom: 16px;
+}
+
+.contact-image img{
+    width: 300px;
+    height: auto;
+}
+
+.collaborator-section{ /*desde aquí collaboradores*/
+margin-top: 60px;
+padding-top: 20px;
+max-width:900px;
+margin:80;
+display:flex;
+flex-direction:column;
+gap:50px;
+}
+
+.collab-text{
+max-width:800px;
+padding:20px;
+border:2px solid rgb(255, 255, 255);
+line-height:1;
+background-color:#F70;
+}
+
+.collaborator{   
+display:flex;
+align-items:center;
+justify-content:flex-start;
+gap:20px;
+}
+
+.collaborator-text{
+flex:1;
+max-width:350px;
+}
+
+.collaborator-image img{
+width:150px;
+}
+
+/* GRID DE DOS COLUMNAS */
+
+.work-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+}
+
+/* CADA PROYECTO */
+
+.project h2{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* IMÁGENES */
+
+.project img{
+width:100%;
+height:auto;
+margin-top:10px;
+border-radius:6px;
+}
